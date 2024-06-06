@@ -15,7 +15,7 @@ function Checkbox() {
   // additional checks and warnings for its descendants. This only happens in
   // development mode.
   useEffect(() => {
-    console.log(condition ? "Checked" : "Unchecked");
+    // console.log(condition ? "Checked" : "Unchecked");
   });
 
   return (

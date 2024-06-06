@@ -15,10 +15,14 @@ input[type="checkbox"] {
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+  justify-items: start;
+  align-items: center;
 }
 
-button {
+button,
+input[type="submit"],
+input[type="button"] {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -34,4 +38,19 @@ button:hover {
 button.secondary {
   color: #fff;
   background-color: rgb(7, 131, 104);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+h2 {
+  margin-bottom: 10px;
 }
