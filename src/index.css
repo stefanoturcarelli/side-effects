@@ -1,0 +1,9 @@
+input[type="checkbox"] {
+  accent-color: #ff0000;
+}
+
+label {
+  position: relative;
+  inset: 4px 8px;
+  font-size: 1.5rem;
+}
