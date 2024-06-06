@@ -1,9 +1,37 @@
-input[type="checkbox"] {
-  accent-color: #ff0000;
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
 }
 
-label {
+input[type="checkbox"] {
   position: relative;
-  inset: 4px 8px;
-  font-size: 1.5rem;
+  inset: -0.5px auto auto 0px;
+  width: 20px;
+  height: 20px;
+  accent-color: red;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  color: rgb(7, 131, 104);
+}
+
+button:hover {
+  background-color: #e4e4e4;
+}
+
+button.secondary {
+  color: #fff;
+  background-color: rgb(7, 131, 104);
 }

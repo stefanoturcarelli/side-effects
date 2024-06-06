@@ -12,7 +12,8 @@ function Checkbox() {
   // In its basic form, useEffect accepts a function and runs it after every
   // render is completed. The following code runs twice becasuse of the
   // '<React.StrictMode>' component in the 'src/index.js' file. It activates
-  // additional checks and warnings for its descendants.
+  // additional checks and warnings for its descendants. This only happens in
+  // development mode.
   useEffect(() => {
     console.log(condition ? "Checked" : "Unchecked");
   });
